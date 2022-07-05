@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>calculaIMC!</title>
+        </head>
+            <body>
+                <h1>Descubra aqui seu IMC</h1>
+                
+                <p>Para inserir suas informações caso necessário use . ao invés de ,</p>
+
+                <h3>Para fazer o cálculo usando sua altura e peso, clique aqui >> <button id="btn">Calcular</button></h3>
+
+                <p>
+                    <h3>CalculaIMC</h3>
+                    Calculadora de IMC (Índice de massa corporea).
+                    -Resumidamente o IMC é usado para detectar casos de obesidade ou desnutrição, <br>
+                    e também vale lembrar que ele nem sempre ira representar a realidade e precisa ser<br>
+                    levado em conta outros fatores para afirmar tal diagnóstico que deve ser feito por um especialista ou médico.<br>
+                    -Criado no século 19 pelo matemático Lambert Quételet, o Índice de Massa Corporal, conhecido pela sigla IMC,<br>
+                    é um cálculo simples que permite medir se alguém está ou não com o peso ideal. Ele aponta se o peso está adequado ou se está abaixo ou acima do peso.
+                    <br>
+                    <h3> Entenda mais sobre seus resultados: </h3>
+                    <br>
+                    -Menos do que 18,5	Abaixo do peso<br>
+                    -Entre 18,5 e 24,9	Peso normal<br>
+                    -Entre 25 e 29,9	Sobrepeso<br>
+                    -Entre 30 e 34,9	Obesidade grau 1<br>
+                    -Entre 35 e 39,9	Obesidade grau 2<br>
+                    -Mais do que 40	Obesidade grau 3<br>
+                </p>
+
+                <script>
+                    btn.addEventListener('click', function(){
+                        var b = prompt("digita sua altura");
+                        var c = prompt("digite seu peso");
+                        
+                        var imc = c / (b * b);
+                        
+                        if (imc < 18.5) {
+                            alert("Você está abaixo do peso, e o resultado é " + imc.toFixed(2));
+                        } else if (imc <= 24.9) {
+                            alert("Você está com o peso normal, e o resultado é " + imc.toFixed(2));
+                        } else if (imc <= 29.9) {
+                            alert("Você está com sobrepeso, e o resultado é " + imc.toFixed(2));
+                        } else if (imc <= 34.9) {
+                            alert("Você está com obesidade grau 1, e o resultado é " + imc.toFixed(2));
+                        } else if (imc <= 39.9) {
+                            alert("Você está com obesidade grau 2, e o resultado é " + imc.toFixed(2));
+                        } else if (imc >= 40) {
+                            alert("Você está com obesidade grau 3, e o resultado é " + imc.toFixed(2));
+                        } else {
+                            alert("Valores fora do calculo");
+                        }
+                    })
+                </script>
+
+            </body>
+</html>
