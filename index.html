@@ -4,18 +4,23 @@
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>calculaIMC!</title>
+            <title>CalculaIMC!</title>
+            <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
         </head>
             <body>
-                <h1>Descubra aqui seu IMC</h1>
+
+                <img title="Imagem de uma balança." alt="Balança, legumes e fita métrica." src="Prancheta 1.png"/>
                 
-                <p>Para inserir suas informações caso necessário use . ao invés de ,</p>
+                <div>
+                <h1 id="p2">Descubra aqui seu IMC</h1>
+                
+                <p>Para inserir suas informações necessário o uso de . ao invés de ,</p>
 
-                <h3>Para fazer o cálculo usando sua altura e peso, clique aqui >> <button id="btn">Calcular</button></h3>
+                <h3>Para fazer o cálculo usando sua altura e peso, clique aqui >>   <button id="btn">Calcular</button></h3>
 
-                <p>
+                <p id="paragrafo-1">
                     <h3>CalculaIMC</h3>
-                    Calculadora de IMC (Índice de massa corporea).
+                    Calculadora de IMC (Índice de massa corporea).<br>
                     -Resumidamente o IMC é usado para detectar casos de obesidade ou desnutrição, <br>
                     e também vale lembrar que ele nem sempre ira representar a realidade e precisa ser<br>
                     levado em conta outros fatores para afirmar tal diagnóstico que deve ser feito por um especialista ou médico.<br>
@@ -32,6 +37,7 @@
                     -Mais do que 40	Obesidade grau 3<br>
                 </p>
 
+                </div>
                 <script>
                     btn.addEventListener('click', function(){
                         var b = prompt("digita sua altura");
