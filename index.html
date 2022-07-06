@@ -45,8 +45,8 @@
                 </div>
                 <script>
                     btn.addEventListener('click', function(){
-                        var b = prompt("digita sua altura");
-                        var c = prompt("digite seu peso");
+                        var b = prompt("Por favor digite sua altura:");
+                        var c = prompt("Agora digite o seu peso:");
                         
                         var imc = c / (b * b);
                         
@@ -63,7 +63,7 @@
                         } else if (imc >= 40) {
                             alert("Você está com obesidade grau 3, e o resultado é " + imc.toFixed(2));
                         } else {
-                            alert("Valores fora do calculo");
+                            alert("Por favor digite um valor válido.");
                         }
                     })
                 </script>
