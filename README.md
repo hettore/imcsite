@@ -20,3 +20,4 @@ levado em conta outros fatores para afirmar tal diagnóstico que deve ser feito 
 -Entre 30 e 34,9	Obesidade grau 1<br>
 -Entre 35 e 39,9	Obesidade grau 2<br>
 -Mais do que 40	Obesidade grau 3<br>
+
